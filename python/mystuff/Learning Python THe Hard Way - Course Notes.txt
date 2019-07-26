@@ -1,0 +1,199 @@
+
+Learn Python the Hard Way - Course Notes
+
+This is a reference guide for the excersies contained within the course
+
+Ex1 -  A Good First Program
+
+After installing the Text Editor (Notepadd ++), Python 2.7 and setting up the Powershell
+The first exercise was to write a simple script that allowed for several print statements to be made.
+Checking the to read the error lines in the powershell and first debugging of a program allowed for basic syntax corrections to be made
+
+Ex2- Comments and Pound Characters
+
+In this exercise we are introduced with the # or 'octothorpe' -its a fricken HASHTAG! to allow comments to be written either.
+At the top of a line #Comment or at the end of a statement print "hi" #Comment
+
+Ex3- Numbers and Math
+
+Here we are introduced to using Numbers and Maths in Python. The symbols are pretty self explanatory.
+Less than equal is <= and Greater than equal is >=
+Using float() allows for the results to have the decimal values to also be displayed
+The order in which Maths is preformed in Python is PEMDAS - Parenthesis, exponents, Multiplication, Division, Addition, Subtraction.
+to represent the remainder of the sum from a division would be using the %
+
+Ex-4 variables and Names
+
+After Printing and doing basic Math operations, here we are naming variables. which is a named bit of code.
+Naming variables allows them to be called in other instances in the program.
+they can be used in Print statements ie: print "This is a statement", varible,
+
+Ex5 - More variables and Printing
+
+In this exercise we have more named variables that are being called in print statements but instead of the previous example
+They are using formatters, formatters allow values to be inserted into statements using the right formating.
+List of formatters are:
+d	Signed integer decimal.
+i	Signed integer decimal.
+o	Unsigned octal.
+u	Unsigned decimal.
+x	Unsigned hexadecimal (lowercase).
+X	Unsigned hexadecimal (uppercase).
+e	Floating point exponential format (lowercase).
+E	Floating point exponential format (uppercase).
+f	Floating point decimal format.
+F	Floating point decimal format.
+g	Same as "e" if exponent is greater than -4 or less than precision, "f" otherwise.
+G	Same as "E" if exponent is greater than -4 or less than precision, "F" otherwise.
+c	Single character (accepts integer or single character string).
+r	String (converts any python object using repr()).
+s	String (converts any python object using str()).
+%	No argument is converted, results in a "%" character in the result.
+
+In this particular exercise is using the %s and %d formatter which is %s - String and %d - decimal
+
+Having learnt about the % formatter, an alternative could be .formatter, here you would have to use tuples in the string "....{0}...{1}...{2}..." followed by .format (0,1,2), this cant do sums or crazy stuff.
+
+
+Ex6 - Strings and Text
+
+Here we are exploring the semantic differnces between strings and text in relation to python.
+A 'String' is usually a bit of text that is being exported out of the program. Strings often have "" or '' with the text of the sting contained within the parenthesis.
+If multiple formats are needed in the string, in order to print multiple variables then they would have to use the correct %(formatter) within the correct Parenthesis () seperated by a comma ,
+
+Ex7-More Printing
+
+This is supplimentary exercises to get familiar with the use of putting strings togethers from variables and having them called through print commands
+
+Ex8 - Printing, Printing
+
+This exercise is again allowing for further familiarity to the use of formatters %r, %s, %d, %f
+
+A Point to note here when using the %r formatter, they are litteral repersentations of the string, in its raw format
+
+Ex9 - Printing, Printing, Printing
+
+There was a couple of new tricks that came in this exercise.
+"\n[string]" allows for the string to be written onto a new line
+""" ...[string]
+[string]
+.
+..%s, %d,
+...
+""" % (,)
+Allows for multiple lined statements to be outputed to the console.
+
+Ex10--More Printing
+
+Here We utilized more of the Escape string feature.
+
+ I cant believe my notes from this point onwards have been lost.... =@
+
+
+ ex36 symbol review
+
+ Keywords
+ • and - Keyword Logic operator: arg1 and arg2 = True
+ • del - del command deletes the data
+ • from - from and import are file commands to take scripts FROM different applications
+ • not - Keywor Logic Operator, where two args are NOT the same
+ • while - This is a infinity loop that would always continue if it is true,a nd ends witht he first false result
+ • as - used to create an alias: advert as ad
+ • elif - ELSE IF, a second logic test
+ • global- This declares universal variables
+ • or - Logic operator where arg1 or arg2 = True
+ • with - Used to handle errors- Need to be explored more:
+ • assert - Used for Debugging, lets you test a condition to return True or not. It would raise an exception error
+ • else - The final clause in a IF-For-loop to determine the BLOCK's exit behavior
+ • if - Thi sis an Interation Loop where a condition is taken and has a method and an exit
+ • pass- This pass's a NULL value
+ • yield - This ends a function with a random generator-It does have its uses, need further info
+ • break-This is a END clause that terminates the code in a block
+ • except - Used to handle exceptions and what to do if one happens
+ • import - Brings in modules
+ • print - This displays an output to the console
+ • class - This declares an object construction
+ • exec - Executes a
+ • in - Checks if a value is present ina  list, tuple etc.
+ • raise - Raises an exception, used in Debugging
+ • continue - Continues the next iteration of the loop
+ • finally - Used with execptions, Block of code that would be executed no matter if there is an execption or not.
+ • is - Test if two variables are equal
+ • return - This returns the value
+ • def -This defines a function or class
+ • for - This is a For Iteration Loop
+ • lambda - This is an anonymous function
+ • try - Gives exception handlers and can clean up code for a group of statements.
+Data Types
+For data types, write out what makes up each one. For example, with strings write out how you
+create a string. For numbers, write out a few numbers.
+ • True - if x == ""; True
+ • False-if y != ""; false
+ • None-if y !="" or int();None
+ • strings - "" '' are strings
+ • numbers - 123 123l9 1234**9
+ • floats- 123.1 3.14159786
+ • lists - ['id','title','desc']
+
+String Escape Sequences
+
+ • \\ - This is a Backslash
+ • \' - This is an apostrophe
+ • \" - This is Quotes
+ • \a - -This is an alert
+ • \b - This is a backspace
+ • \f - This is a formfeed?
+ • \n - This is a new line
+ • \r - This is a carrige return
+ • \t - This is a horizontal tab
+ • \v - this is a vertical tab
+String Formats
+
+ • %d - This calls a decimal integer
+ • %i - This calls an integer
+ • %o - This is a signed octal value,
+ • %u - This is an Unsigned Decimal
+ • %x - Hex and Octal conversions
+ • %X - Hex conversions
+ • %e - Float conversions exponential
+ • %E -- Float conversions exponential  but with a decimal point
+ • %f- Float conversion
+ • %F- Float conversions  but with a decimal point
+ • %g - Float conversions exponential
+ • %G - Float conversions exponential but with a decimal point
+ • %c - Single character (accepts integer or single character string).
+ • %r - This calls a literal representation of raw data
+ • %s - This calls a String
+ • %% -No argument is converted, results in a "%" character in the result
+Operators
+
+ • + Binary Addition , unary unchanged Numeric value
+ • - Binary Subtraction, unary negation of the numeric value
+ • * - Binary Multiplication
+ • ** -Binary Exponential
+ • / - Binary Division classic division
+ • // - rounds down division or Floor division- lowest round number
+ • % - Modulus Calculates the float value between two integers
+ • < - Less than
+ • > - More than
+ • <= -Less than Equal to
+ • >= -More than Equal to
+ • == - Equality test, boths sides are equal
+ • != - Not equal to
+ • <> - Not equal to, this is legacy code from ABC and should not be used, replace with !=
+ • ( ) - Used to identify the parameters or order of operations, refered to as tuples, these cannot be changed or immutable
+ • [ ] - Used for generating lists, these can be changed, mutable
+ • { } - These are used to define dictionaries in a list called a literal and sets of data
+ • @- This is a function call @Decorator
+ • , - seperates values from each other
+ • :
+ • . - used to call functions
+ • = - unary assignment operator
+ • ; - end of line syntax
+ • += - value + 1 x=x+1
+ • -= - value -1 x=x-1
+ • *= - value multiplied by a factor, x = x*n
+ • /= - value divided by a factor, x=x/n
+ • //= value is the floor of the division
+ • %= - value is the remainder or of the division
+ • **= - is the exponent vvalue being added; x = a**b

@@ -1,0 +1,9 @@
+class coordinate(object):
+	def __init__(self, x, y):
+		self.x = x
+		self.y = y
+
+c = coordinate (3,4)
+origin = coordinate (0,0)
+print (c.x)
+print (origin.x)
